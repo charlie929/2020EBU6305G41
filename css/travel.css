@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.text-center {
+    text-align: center !important;
+}
+
+.title-subhny {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #789ada;
+    display: block;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.title-w3l {
+    font-size: 38px;
+    line-height: 0px;
+    font-weight: 600;
+}
+
+.placeholder {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+	width: 100%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display: inline-block
+}
+
+.columns {
+    width: 33.3%;
+    float: left;
+    font-family: "Source Sans Pro";
+    color: #000000;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.row .columns p {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.row .columns li {
+    /* background: url(../images/list.png) no-repeat 0.5em; */
+    list-style: url(../images/list.png);    
+    list-style-type: square;
+    list-style-position: inside; 
+    /* list-style: none; */
+	padding-left: 5%;
+	padding-right: 5%;
+    background-size: 5px;
+}
+
+.row .columns h4 {
+	text-align: center;
+}

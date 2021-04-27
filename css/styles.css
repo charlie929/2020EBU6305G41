@@ -1,0 +1,90 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+  
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* chapter navigation bar */
+.nav-link{
+    text-align: left;
+    color: black;
+    font-size: 11px;
+    margin: 7px;
+}
+.nav p{
+    color: darkgoldenrod;
+    text-align: left;
+    font-size: 15px;
+    margin: 20px;
+}
+.content-nav{
+  position: sticky;
+  top: 200px;
+}
+
+/* main page layout */
+.main-page-content-two-part{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+.left-content{
+  padding-right: 20px;
+  padding-left: 30px;
+}
+.right-content{
+  padding-left: 40px;
+  padding-right: 80px;
+}
+.page-link-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.bottom-link{
+  font-size: 15px;
+  font-weight: 300;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.bottom-link:hover{
+  border-bottom: 1px solid black;
+}
+/* intro page layout */
+.course-introduction{
+  padding-left: 350px;
+  padding-top: 100px;
+  padding-right: 350px;
+  padding-bottom: 140px;
+}
+.overview-wrapper{
+  padding-top: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.course-intro-list{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+} 
+.content-catalog-wrapper{
+  align-items: center;
+  padding-top: 30px;
+}
+.chapter-list-name{
+  color: darkgoldenrod;
+  font-size: 17px;
+  font-weight: 500;
+}
+.intro-button{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

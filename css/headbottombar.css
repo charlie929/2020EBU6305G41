@@ -152,6 +152,7 @@ li{list-style-type:none;}/*delete the small point in front of list item*/
 /* footer */
 
 .footer-wrapper {
+	background-size: cover;
     display: flex;
 	padding-left:5%;
 	padding-right:5%;
@@ -200,8 +201,6 @@ li{list-style-type:none;}/*delete the small point in front of list item*/
 	.footer-box{
 	width:100%;
 	}
-
-
 }
 
 .footer-link-wrapper a {
@@ -219,14 +218,6 @@ li{list-style-type:none;}/*delete the small point in front of list item*/
 .footer-link-wrapper a:hover {
   color: white;
 }
-
-
-*
-{
-  margin: 0;
-  padding: 0;
-}
-   
 
    
 .clearfloat/*clear the float element format*/

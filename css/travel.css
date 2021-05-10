@@ -11,7 +11,7 @@
     color: #789ada;
     display: block;
     font-family: 'Pacifico', cursive;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     padding-top: 30px;
 }
 
@@ -19,11 +19,14 @@
     font-size: 38px;
     line-height: 0px;
     font-weight: 600;
+    font-family: 'Georgia';
+    padding-bottom: 20px;
 }
 
 .placeholder {
+    border-radius: 8%;
     width: 90%;
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 5%;
     padding-right: 5%;
@@ -76,7 +79,7 @@
     list-style: url(../images/list.png);  
 	padding-left: 5%;
 	padding-right: 5%;
-    background-size: 5px;
+    background-size: 10px;
 }
 
 .row .columns h4 {

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'FuturaLT';
+    src:url('../font/FuturaLT-Book.otf');
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tour-title {
+    text-align: left;
+    font-family: 'Georgia' ;
+    font-weight: bold;
+    font-size: 1.875em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #789ada;
+    padding-top: 1.875em;
+}
+
+.destination {
+    text-align: left;
+    font-family: 'Georgia' ;
+    font-size: 1.125em;
+    padding-bottom: 1em;
+    font-weight: normal;
+}
+
+.locate-image {
+    vertical-align: middle;
+    height: 1.625em;
+    width: 1.875em;
+}
+
+.row {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block
+}
+
+.right-image {
+    background-color: #FFFFFF;
+/*  width: 55%; */
+    float: right;
+}
+
+.left-article {
+    background-color: #FFFFFF;
+    width: 48%;
+    float: left;
+}
+
+.left-article h3{
+    font-size: 1.5625em;
+    color:#ffa500;
+    font-family: 'FuturaLT';
+    font-weight: bolder;
+}
+
+.row p{
+    font-size: 1.125em;
+    font-family: 'FuturaLT';
+    font-weight: lighter;
+}
+
+.row h4{
+    font-size: 1.5625em;
+    font-family: 'FuturaLT';
+    font-weight: bolder;
+    margin-bottom: 1.25em;
+}
+
+.highlight-icon{
+    vertical-align: middle;
+    height: 1.875em;
+    width: 1.875em;
+}
+
+.tour-list{
+    list-style: url(../images/list1.png);
+    font-size: 1.125em;
+    font-family: 'FuturaLT';
+    line-height: 1.875em;
+    background-size: 0.625em;
+}

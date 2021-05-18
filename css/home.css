@@ -1,0 +1,392 @@
+@charset "UTF-8";
+
+
+body{
+	margin:0;
+	padding:0;
+	background-color: #789ada;
+}
+
+.innercontainer {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom-width: 0;
+	padding-left: 0;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+
+.homepage-header{
+	width: cover;
+	height: 50em;
+	background-size: 100%;
+	background-color: #789ada;
+	background-image: linear-gradient(to right, #789ada, hsl(30deg 100% 1% / 20%)), url(../images/mountain1.jpg);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: initial;
+	background-attachment: fixed;
+	padding-top: 0.59em;
+	
+
+}
+
+.mapcontainer{float:center;padding-top:1.17em;width:100%;height:32em;}
+.map{vertical-align: center;margin-top:1.17em;width:50%;height:51.17em;margin-left:30%;}
+
+.description{
+	width:40vw;
+	height:20%;
+	font-style: normal;
+	font-family:Georgia,Times, serif;
+	color: #FFFFFF;
+	letter-spacing: 0.09em;
+	text-align: left;
+	padding-left: 5%;
+	
+}	
+
+.comment{
+	width:40vw;
+	height:20%;
+	font-style: normal;
+	font-family:Georgia,Times, serif;
+	color: #FFFFFF;
+	letter-spacing: 0.09em;
+	text-align: left;
+	padding-left: 5%;
+}
+h6{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	color:#87abec;
+}
+
+.gallerybox{
+    width: 100%;
+	height:35em;
+	background-color: rgb(255, 255, 255);
+	border-top: 0.12em solid #b7dde7;
+	padding-top: 0.59em;
+
+}
+
+.gallerybox h1{
+	font-weight:500;
+	font-style: bold;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: right;
+	padding-right: 5%;
+	color: #789ada;
+	}
+
+.pic4{
+	width:18%;
+	height:25em;
+	float: left;
+	margin: 2%;
+	background-color: rgb(255, 217, 182);
+	padding-left:0.5%;
+	padding-right:1%;
+	padding-bottom: 1%;
+	border-radius: 2em;
+}
+
+.pic3{
+	width:27%;
+	height:15em;
+	float: left;
+	margin: 2%;
+	background-color: #b7c3da;
+	border-radius: 1em 5em 1em 5em;
+	border:#8ea9db 0.2em solid;
+}
+
+.scenerybox{
+    width: 100%;
+	height:20em;
+	background-color: #789ada;
+	margin-top:1em;
+	display:flex;
+	flex-flow:row;
+}
+
+.scenerybox h1{
+	font-weight:bolder;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: left;
+	letter-spacing: 0.09em;
+	padding-left: 5%;
+	color: #FFFFFF;
+	}
+
+.scenerybox .description{
+	width:60%;
+	font-style: normal;
+	font-family:Georgia,Times, serif;
+	color: #FFFFFF;
+	letter-spacing: 0.5em;
+	text-align: left;
+	margin-left:15%;
+}
+
+.scenerybox a{
+	text-align: right;
+	float:right;
+}
+.travelguidebox{
+	width: 100%;
+	height:35em;
+	background-color: #ffffff;
+	display:flex;
+	flex-flow:row;
+}
+
+.travelguidebox h1{
+	font-weight:bolder;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+	color: #789ada;
+	}
+
+.communitybox{
+	width: 100vm;
+	height:40em;
+	background-color: #e6e6e6;
+	display:flex;
+	flex-flow:row;
+	overflow: hidden;
+}
+
+.communitybox .innercontainer{
+	border-top: 0.24em solid #b7dde7;
+}
+.communitybox h1{
+	font-weight:bolder;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	text-align: center;
+	padding-right: 5%;
+	color: #789ada;
+	}
+.communitybox .comment{
+	width:100%;
+	height: 4em;
+	margin-bottom: 0.2em;
+	background-color: burlywood;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:#789ada;
+	
+}
+
+
+.quizbox{
+	width: 100vm;
+	height:35em;
+	background-color: #ffffff;
+	display:flex;
+	flex-flow:row;
+}
+
+
+
+.quiztitle{
+	font-family:'coolfont';
+	color:orange;
+	text-align: center;
+	font-size: 2.35em;
+	font-weight: bolder;
+	letter-spacing: 0.12em;
+	}
+
+.quizbox .innercontainer{
+	border-top: 0.24em solid #b7dde7;
+}
+
+.quizbox .description{
+	margin-top:5em;
+	width:80%;
+	vertical-align: center;
+	text-align: center;
+	color:#789ada;
+
+}
+
+/*buttons effects */
+.button {  
+	position: relative;  
+	appearance: none;  
+	background: #f72359;  
+	padding: 1em 2em;  
+	border: none;  
+	color: white;  
+	font-size: 1.2em;  
+	cursor: pointer;  
+	outline: none;  
+	overflow: hidden;  
+	border-radius: 100px;  
+}
+
+body #movetop {
+	display: none;
+	position: fixed;
+	bottom: 55px;
+	right: 1.17em;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #ffffff;
+	width: 50px;
+	height: 50px;
+	background: rgb(252, 144, 72);
+	padding: 0;
+	line-height: 36px;
+	border-radius: 35px;
+	transition: 0.3s ease-out;
+  }
+
+
+.coolbutton{
+	float:right;
+	text-align: right;
+	width:100%;
+	margin-top:2em;
+	height: 10em;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing:0.09em;
+	
+}
+
+.coolbutton a {
+	position: relative;
+	padding: 0.59em 1.76em;
+	margin: 0 2.65em;
+	color:orange;
+	text-decoration: none;
+	font-size: 1.17em;
+	text-transform: uppercase;
+	transition: 0.5s;
+	overflow: hidden;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+	
+}
+
+.coolbutton a:hover {
+	background: orange;
+	color: #789ada;
+	box-shadow: 0 0 50px orange;
+	transition-delay: 0.5s;
+}
+
+.coolbutton a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.59em;
+	height: 0.59em;
+	border-top: 0.12em solid orange;
+	border-left: 0.12em solid orange;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.coolbutton a:hover::before {
+	width: 100%;
+	height: 100%;
+	transition-delay: 0s;
+}
+
+.coolbutton a::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0.59em;
+	height: 0.59em;
+	border-bottom: 0.12em solid orange;
+	border-right: 0.12em solid orange;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.coolbutton a:hover::after {
+	width: 100%;
+	height: 100%;
+	transition-delay: 0s;
+}
+
+
+@media screen and (max-width:61.17em){
+	.comment{
+		height:20em;
+		overflow: visible;
+	}
+
+	.mapcontainer{float:center;padding-top:1.17em;height:800px;}
+
+	.map{
+		vertical-align: center;
+		margin-top:5px;
+		margin-left:0%;
+		width:80vm;}
+
+	.description{
+		width:80%;
+		height:auto;
+		text-align: left;	
+	}
+	
+	.gallerybox{
+		width: 100vm;
+		height: 65em;
+		background-color: rgb(255, 255, 255);
+		display:flex;
+		flex-flow:column;
+	}
+
+	.pic3{
+		vertical-align: center;
+		width: 80%;
+		padding-left: 10%;
+		padding-right:10%;
+	}
+
+	.pic4{
+		vertical-align: center;
+		width: 70%;
+		margin-top: 2em;
+		padding-left: 10%;
+		padding-right:10%;
+		border-radius: 1em;
+	}
+
+
+	.coolbutton{
+		width:80%;
+		height:2.35em;
+		text-align: center;
+		margin-top:10%;
+	}
+
+	.scenerybox{
+		margin-top:1.3em;
+		height:29em;
+		display:flex;
+		flex-flow:row;
+	}
+
+	.travelguidebox{
+		height:65em;
+	}
+
+	.communitybox{
+		height:121em;
+	}
+}
+
+

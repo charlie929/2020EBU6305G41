@@ -51,6 +51,7 @@
 	color: #FFFFFF;
 	letter-spacing: 2px;
 }
+<<<<<<< HEAD:css/header.css
 /* footer */
 .footer-wrapper {
     background-color: darkcyan;
@@ -90,3 +91,6 @@
 .footer-link-wrapper a:hover {
   color: white;
 }
+=======
+
+>>>>>>> edit1:bxl/css/header.css

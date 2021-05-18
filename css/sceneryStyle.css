@@ -3,68 +3,33 @@
 a:hover {
 	color: rgba(89,92,100,1.00);
 }
-/*header*/
-header {
-	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
+img{
+	border-radius: 15px;
+	max-width: 100%;
+	max-height: 100%;
 }
-/* Logo placeholder*/
-#logo {
-	float: left;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 139px;
-	text-align: center;
-	color: rgba(255,255,255,1.00);
-	background-color: rgba(190,190,190,1.00);
-}
-/* div for Links in header */
-#headerLinks {
-	float: left;
-	width: calc( 100% - 139px );
-	text-align: right;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: rgba(255,255,255,1.00);
-}
-/* Links in header */
-#headerLinks a {
-	text-decoration: none;
-	color: rgba(146,146,146,1.00);
-	padding-left: 66px;
-	font-size: 14px;
-}
-/* Offer text banner*/
-#offer {
-	font-family: 'Montserrat', sans-serif;
-	clear: both;
-	background-color: rgba(15,172,225,1.00);
-	color: rgba(233,233,227,1.00);
-	padding-left: 115px;
-	padding-top: 57px;
-	padding-bottom: 57px;
+/*img{
+	border-radius: 15px;
+	width: 200px;
+	height: 140px;
 }
 /* Main content of the site */
 #content {
 	clear: both;
 	overflow: auto;
-	padding-top: 29px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 /* Sidebar */
 #content .sidebar {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(146,146,146,1.00);
 	float: left;
-	width: 20%;
-	padding-left: 3%;
-	padding-right: 3%;
-	text-align: center;
-	background-color: rgba(175,171,175,1.00);
-	padding-top: 36px;
-	height: 784px;
+	width: 11%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #789ada;
+	padding-top: 1.57em;
+	padding-bottom: 5em;
 }
 /* main content of the site */
 #content .mainContent {
@@ -76,25 +41,10 @@ header {
 /*menubar's properties for menus in sidebar */
 #content .sidebar #menubar {
 	text-align: left;
-	color: rgba(113,113,112,1.00);
+	padding-left: 10%;
+	color: #789ada;;
 	position: relative;
 	left: 0%;
-}
-/* Search field in sidebar */
-#content .sidebar #search {
-	width: 100%;
-	border-radius: 0px;
-	height: 42px;
-	text-align: center;
-	color: rgba(208,207,207,1.00);
-	font-size: 14px;
-	;
-	margin-bottom: 21px;
-}
-/* Whole page content */
-#mainWrapper {
-	width: 80%;
-	padding-left: 10%;
 }
 /*menu elements */
 .menu ul li {
@@ -103,11 +53,6 @@ header {
 	position: relative;
 	left: -35px;
 	padding-top: 12px;
-}
-/* Product rows for catalog */
-#content .mainContent .productRow {
-	overflow: auto;
-	color: rgba(146,146,146,1.00);
 }
 /* Each product Information in the catalog */
 .mainContent .productRow .productInfo {
@@ -148,48 +93,21 @@ header {
 	text-transform: uppercase;
 	margin-top: 8px;
 }
-/* footer */
-#mainWrapper footer {
-	clear: both;
-	overflow: auto;
-	background-color: darkcyan;
-	font-family: source-sans-pro, sans-serif;
-	font-style: normal;
-	font-weight: 200;
-	line-height: 1.8;
-	padding-top: 22px;
-	padding-left: 22px;
-	text-align: center;
-	padding-bottom: 22px;
-	padding-right: 22px;
-}
-/*Each footer content */
-#mainWrapper footer div {
-	width: 27%;
-	float: left;
-	padding-left: 4%;
-	padding-right: 2%;
-	color: rgba(255,255,255,1.00);
-	text-align: justify;
-}
-/* Links in footer */
-footer div a {
-	color: white;
-	display: block;
-	text-decoration: none;
-	text-align: center;
-}
 /* Product's images in catalog */
 .productInfo div img {
-	width: 100%;
+
+	border-radius: 15px;
 }
 /*Links in sidebar */
 .sidebar #menubar .menu ul li a {
-	color: rgba(0,0,0,1.00);
+	color: white;
 	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .sidebar #menubar .menu ul li a:hover {
-	color: rgba(0,0,0,1.00);
+	color: white;
 	text-decoration: none;
 }
 /* Menu headings in sidebar */
@@ -198,7 +116,7 @@ footer div a {
 }
 /*Links under menus in sidebar */
 #menubar .menu ul li a {
-	font-size: 14px;
+	font-size: 20px;
 }
 /* Menus in sidebar */
 .sidebar #menubar .menu {
@@ -223,10 +141,6 @@ footer .footerlinks {
 	overflow: auto;
 	padding-left: 12%;
 	padding-top: 0px;
-}
-/* horizontal separators in sidebar */
-#content .sidebar hr {
-	display: none;
 }
 /*The sidebar and maincontent of page */
 #content {
@@ -293,34 +207,12 @@ footer .footerlinks {
 .productRow .productInfo .buyButton {
 	font-size: 15px;
 }
-/* Container for links in footer */
-#mainWrapper footer .footerlinks {
-	float: none;
-	width: 100%;
-	position: relative;
-	top: 17px;
-	clear: both;
-	text-align: center;
-	left: 0%;
-	padding-bottom: 19px;
-}
-/* Container for each footer divisions */
-#mainWrapper footer div {
-	width: 44%;
-	text-align: justify;
-	font-size: 15px;
-}
 /* Links in footer */
 .footerlinks p a {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	display: inline;
 	padding-right: 35px;
-}
-/* Footer region */
-#mainWrapper footer {
-	padding-left: 16px;
-	overflow: hidden;
 }
 /* Links in header */
 header #headerLinks a {
@@ -330,11 +222,6 @@ header #headerLinks a {
 /* Offer- Text banner */
 #mainWrapper #offer {
 	padding-left: 22%;
-}
-/* Paragraphs in footer */
-footer .footerlinks p {
-	display: inline;
-}
 }
 
 /*media query for small screen devices */
@@ -404,5 +291,6 @@ header #headerLinks a {
 	text-align: center;
 	width: 100%;
 	padding-left: 0px;
+}
 }
 }

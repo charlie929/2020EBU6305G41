@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4-Day Shanghai & Hangzhou with Watertown Tour</title>
+<link href="css/tour.css" rel="stylesheet" type="text/css">
+<link href="css/tourImg2.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/headbottombar.css">
+<link href="css/button.css" rel="stylesheet" type="text/css">
+<style>
+    @font-face {
+        font-family: 'FuturaLT';
+        src:url('../font/FuturaLT-Book.otf');
+    }
+    @font-face {
+        font-family: 'Road_Rage';
+        src:url(font/Road_Rage.otf);
+    }
+    .ac-container{
+        width: 100%;
+        margin: 1em auto 3em auto;
+        text-align: left;
+    }
+    .ac-container label{
+        font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+        padding: 0.5em 1em;
+        position: relative;
+        z-index: 20;
+        display: block;
+        height: 1.8em;
+        cursor: pointer;
+        color: #777;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+        line-height: 2em;
+        font-size: 1.2em;
+        font-family: 'FuturaLT';
+        background: #ffffff;
+        background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+        background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+        box-shadow: 
+            0px 0px 0px 1px rgba(155,155,155,0.3), 
+            1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+            0px 2px 2px rgba(0,0,0,0.1);
+    }
+    .ac-container label:hover{
+        background: #fff;
+    }
+    .ac-container input:checked + label,
+    .ac-container input:checked + label:hover{
+        background: orange;
+        color: white;
+        font-family: 'FuturaLT';
+        text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+        box-shadow: 
+            0px 0px 0px 1px rgba(155,155,155,0.3), 
+            0px 2px 2px rgba(0,0,0,0.1);
+    }
+    .ac-container label:hover:after,
+    .ac-container input:checked + label:hover:after{
+        content: '';
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        right: 0.9em;
+        top: 0.5em;
+        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJDQjg3QjIzNUEwQTExRTFCMzhGODE4MEUyMzVCOUExIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJDQjg3QjI0NUEwQTExRTFCMzhGODE4MEUyMzVCOUExIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkNCODdCMjE1QTBBMTFFMUIzOEY4MTgwRTIzNUI5QTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkNCODdCMjI1QTBBMTFFMUIzOEY4MTgwRTIzNUI5QTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5cTChyAAAAsUlEQVR42mJcduA0AxBkAvEOIL7PgBuwAXE1EHcA8XcmIFEBxNOA+DAQq+DRtBqI64B4CxBzgjS6QiWlgfgAEKtj0bQOiP2gfF0gVgRp9AHifUia9yJpBmnaCMTeUP5rIHYG4msgjd+xaAbZbADV5IGkyQGIL4M4TFBBmObdUL4EEJ9H0vQCqukazP1MSH4BafZH0syApMkZWRO6RmTNO/BpwqYRpjkIiBegOw8ZAAQYAErPJ/hwLstPAAAAAElFTkSuQmCC) no-repeat center center;	
+    }
+    .ac-container input:checked + label:hover:after{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxMjY0NjgzNUEwQTExRTFBMkMwQUUyOEY2NjkzRDMyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxMjY0Njg0NUEwQTExRTFBMkMwQUUyOEY2NjkzRDMyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjEyNjQ2ODE1QTBBMTFFMUEyQzBBRTI4RjY2OTNEMzIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjEyNjQ2ODI1QTBBMTFFMUEyQzBBRTI4RjY2OTNEMzIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4kGTYVAAAAlklEQVR42mJcduA0AxbACcTTgLgDiG9iU8CEQ9M6IE4A4gNArEWMRpCmjUDsAeVLAPFebJqZsGhyRVODVTMTkqYtSJpeALEhEO9A0ozibCYkTU5QsadA7ADEF4DYH0mzKFSzLkwjuiZnpJD8hUUz2NkgjbtxaGJA07wVyr8GxPdZoHH1BWrqHQbsAKQ5CIiroeq/AwQYALFQJdCqpXTVAAAAAElFTkSuQmCC);
+    }
+    .ac-container input{
+        display: none;
+    }
+    .ac-container article{
+        background: rgba(255, 255, 255, 0.5);
+        margin-top: 0;
+        overflow: hidden;
+        height: 0px;
+        position: relative;
+        z-index: 10;
+        -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    }
+    .ac-container article p{
+        font-style: 'FuturaLT';
+        color: rgb(48, 48, 48);
+        line-height: 1.5em;
+        font-size: 1em;
+        padding: 1em;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    }
+    .ac-container input:checked ~ article{
+        -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+    }
+    .ac-container input:checked ~ article.ac-large{
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class = "primary-header" style="height: 10em;">
+            <h1 style="font-family: 'Road_Rage';font-size: 75px;position: absolute;left: 1.25em;color:#f58220">W</h1>
+            <h1 style="font-family: 'Road_Rage';font-size: 52px;position: absolute;left: 3em;top:0.7em; color:#f2f2f2">onders</h1>
+            <h1 class = "headbar-title" style="font-family: 'Road_Rage';font-size: 30px;position: absolute;left: 6.5em;top:3.5em;">of China</h1>
+              <nav class="nav right">
+                <ul>
+                  <li class="current"><a href="#">Menu</a></li>
+                  <li><a href="home.html" class="active">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="scenery.html">Scenery</a></li>
+                  <li><a href="travelguide.html">Travel Guide</a></li>
+                  <li><a href="community.html">Community</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="clearfloat"></div>
+
+        <h3 class="tour-title">4-Day Shanghai & Hangzhou with Watertown Tour</h3> 
+        <h5 class="destination">
+            <span>
+                <img class="locate-image" src="images/locate.png">
+            </span>
+            Destination: Shanghai, Hangzhou, Nanxun
+        </h5>
+        
+        <div class="row">
+            <div class="right-image">
+                <div class="slide" style="margin-bottom: 30px">
+
+                    <input type="radio" name="sildeInput" value="0" id="sildeInput1" checked hidden />
+                    <label for="sildeInput1">1</label>
+                  
+                    <input type="radio" name="sildeInput" value="1" id="sildeInput2" hidden />
+                    <label for="sildeInput2">2</label>
+                  
+                    <input type="radio" name="sildeInput" value="1" id="sildeInput3" hidden />
+                    <label for="sildeInput3">3</label>
+                  
+                    <ul>
+                      <li>&nbsp;</li>
+                      <li>&nbsp;</li>
+                      <li>&nbsp;</li>
+                    </ul>
+                  </div>
+            </div>
+
+            <div class= left-article>
+                <h3>
+                    Immerse yourself in Nanxun Water Town
+                </h3>
+                <p>
+                    <strong>4 Days Shanghai, Hagzhonu, and Nanxun Water Town Culture Tour</strong>
+                    <br>Shanghai and Hangzhou are two economic engines of Eastern China, however, they have totally different temperaments. What's life like in these two cities? Let's see…
+                    <br><br>Discover Shanghai's old and new on the 1.5-km-long Bund, feel its history and look into its future. Experience the real Hangzhou with its convenient AI life, and enjoy its classic scenery. Have fun in a less commercial water town and learn about traditional Chinese culture.
+                    <br><br>This tour is designed to take advantage of the 144-hour visa-free transit policy.
+                </p>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <div class='row'>
+
+            <h4>
+                <span>
+                    <img class="highlight-icon" src="images/highlight.png">
+                </span>
+                Tour Highlights
+            </h4>
+            
+            <li class="tour-list">Find out the secret of Shanghai's progression by taking an in-depth Bund exploration.</li>
+            <li class="tour-list">Feel how smart Hangzhou is by exploring a new type of supermarket and using mobile payment.</li>
+            <li class="tour-list">Experience authentic Hangzhou life by having a boat ride and visiting a traditional Chinese medicine museum.</li>
+            <li class="tour-list">Have some cultural experiences, including making and trying your hand at the oldest form of Chinese printing.</li>
+            <li class="tour-list">Take a rowing boat in Nanxun Water Town and participate in a wedding on the water.</li>
+            <p>&nbsp;</p>
+            <h4>
+                <span>
+                    <img class="highlight-icon" src="images/itinerary.png">
+                </span>
+                Tour Itinerary
+            </h4>
+            <section class="ac-container">
+				<div>
+					<input id="ac-1" name="accordion-1" type="checkbox" checked />
+					<label for="ac-1">Day 1  Shanghai Arrival, see Shanghai's Old and New</label>
+					<article class="ac-large">
+						<p>
+                            Your private guide will be ready to meet and greet you at airport arrivals. A comfortable private car (non-smoking) with an experienced driver will transfer you directly to the downtown area.
+                            <br><br>Start your journey with the iconic <strong>Bund</strong>. Follow your local guide into historical buildings, touch the old items, and find some clues to Shanghai's colonial past and development history.
+                            <br><br>You will have a chance to try shengjian (pan-fried buns) in an <strong>unassuming Michelin-starred restaurant</strong>, which the tourist crowds never find.
+                            <br><br>Get a unique "ticket" from your guide, board a <strong>public ferry</strong> with the locals, and cross the Huangpu River to the Pudong area — the financial engine of Shanghai.
+                            <br><br>Take the fastest elevator in the world up <strong>Shanghai Tower</strong>. There you will be able to stand at the top of Shanghai.
+                            <br><br><strong>Hotel options:</strong>
+                            <br>Sunrise On The Bund 
+                            <br>Les Suites Orient, Bund Shanghai, Bund view 
+						</p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-2" name="accordion-1" type="checkbox" />
+					<label for="ac-2">Day 2  Discover Shanghai's Past, Bullet Train to Smart Hangzhou</label>
+					<article class="ac-large">
+						<p>
+                            In the morning, visit <strong>Yu Garden</strong>, which was built in the 16th century. It is like a peaceful oasis, hidden in the bustling metropolis. When walking in the garden, you will learn the meanings of its design and decoration.
+                            <br><br>Then, follow Shanghai's timeline to the 19th century for the <strong>former French Concession</strong>. A good proportion of Shanghai's colonial architecture has been carefully preserved there, and buildings even sport heritage plaques giving details of their history.
+                            <br><br>After lunch, take the <strong>bullet train to Hangzhou</strong>. Your Hangzhou local guide will meet you at Hangzhou East Train Station.
+                            <br><br>When you step of the train in Hangzhou, you will have entered a smart city — AI-controlled traffic system, world-leading payment methods, new-era retail stores… You can buy everything on your smart phone and get it as soon as 30 minutes later. Follow your guide to explore a <strong>new type of supermarket</strong> and find out how it can deliver goods into customers' hands in 30 minutes.
+                        </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-3" name="accordion-1" type="checkbox" />
+					<label for="ac-3">Day 3  Tea Village and West Lake</label>
+					<article class="ac-large">
+						<p>
+                            The best time to pick tea leaves is in the morning, so the first visit of the day is a <strong>tea village</strong>. Go with the tea famers and learn to pick tea leaves. Have a break at a tea famer's home, and discover the proper way to make tea. You will learn how the tea village has changed during China's history of economic development.
+                            <br><br>Have lunch in a <strong>tea-themed restaurant</strong> and see how tea is a part of Hangzhou's daily dishes.
+                            <br><br>In the afternoon, walk by the beautiful <strong>West Lake</strong>, then take to the water on a <strong>rowing boat</strong>. Listen to the interesting stories behind the sights of the lake.
+                            <br><br>Later you will visit a hundred-year-old <strong>traditional Chinese medicine pharmacy</strong>. There you can see various medicinal materials and observe how TCM pharmacists make up a prescription. Try a cup of healthy herbal tea.
+                            <br><br>In the late afternoon, enjoy a <strong>"G20 first lady" afternoon tea</strong> in a roof garden beside West Lake. Appreciate the porcelain, tea, and scenery.
+                        </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-4" name="accordion-1" type="checkbox" />
+					<label for="ac-4">Day 4  Cultural Experiences in Nanxun Water Town, Shanghai departure</label>
+					<article class="ac-large">
+						<p>
+                            After breakfast at your hotel, prepare to interact with Chinese culture and to have a relaxing boat ride in <strong>Nanxun Water Town</strong>!
+                            <br><br>Nanxun Water Town is the most original and unique of such towns. It is full of life and culture, and less commercial than other water towns.
+                            <br><br>Take a <strong>rowing boat</strong> to visit the former residence of Zhang Shiming, a super-rich man of the late Qing Dynasty (1644–1912).
+                            <br><br>Have <strong>lunch at a local restaurant</strong> by the main canal in the water town. Take a break and observe the life there — you will see local women washing clothes by the canal and preparing lunch, and children chasing each other.
+                            <br><br>There will be a <strong>wedding performance on the water</strong>, showing you how a traditional wedding was conducted in the water town. If you like, you can take part and play the bride/groom!
+                            <br><br>After the dreamy experiences in Nanxun Water Town, we'll drive you to Shanghai Pudong Airport (or a train station etc.) and wave goodbye.
+                        </p>
+					</article>
+				</div>
+			</section>
+        </div>
+        <div>&nbsp;</div>
+        <div class="coolbutton">
+            <a href="tour1.html">Last Page</a></div>
+        <div>&nbsp;</div>  
+        <div class="coolbutton">
+        <a href="tour3.html">Next Page</a></div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+    </div>
+
+
+
+    <footer>
+        <div class="clearfloat"></div>
+           <div class="row blockDisplay">     
+             <div class = "footer-wrapper">
+               <div class="footer-box">
+                 <h6 class="footer-title">About Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+               
+               <div class="footer-box">
+                 <h6 class="footer-title">Contect Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+     
+                 <div class="footer-link-wrapper">
+                   <h6 class="footer-title">More Information</h6>
+                   <ul>
+                     <li><a href="https://www.topchinatravel.com/china-guide/qinghai-tibet-plateau-the-highest-plateau-in-the-world.htm">Reference Page1</a></li>
+                     <li><a href="https://www.chinahighlights.com/tour/top-china-tours/">Reference Page2</a></li>
+                   </ul>
+                 </div>
+     
+             </div>
+     </div>
+     </footer>
+
+</body>

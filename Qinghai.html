@@ -4,63 +4,109 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/sceneryStyle.css" rel="stylesheet" type="text/css">
+<link href="css/button.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/headbottombar.css">
 </head>
+
+<style>
+@font-face {
+				font-family: 'Road_Rage';
+				src:url(font/Road_Rage.otf);
+			}
+</style>
 
 <body>
 <div id="mainWrapper">
   <header>
-                <div class="primary_header">
-                  <h1 class="title">Scenery Page</h1>
-                </div>
-
-            </header>
+    <div class = "primary-header" style="height: 10em;">
+          <h1 style="font-family: 'Road_Rage';font-size: 75px;position: absolute;left: 1.25em;color:#f58220">W</h1>
+            <h1 style="font-family: 'Road_Rage';font-size: 52px;position: absolute;left: 3em;top:0.7em; color:#f2f2f2">onders</h1>
+            <h1 class = "headbar-title" style="font-family: 'Road_Rage';font-size: 30px;position: absolute;left: 6.5em;top:3.5em;">of China</h1>
+              <nav class="nav right" >
+                <ul>
+                  <li class="current"><a href="#">Menu</a></li>
+                  <li><a href="home.html" class="active">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="scenery.html">Scenery</a></li>
+                  <li><a href="travelguide.html">Travel Guide</a></li>
+                  <li><a href="community.html">Community</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+              </nav>
+        </div>
+      </header>
   <div id="content">
-<section class="sidebar"> 
+    <section class="sidebar"> 
       <!-- This adds a sidebar with 1 searchbox,2 menusets, each with 4 links -->
-      <input type="text"  id="search" value="search">
       <div id="menubar">
         <nav class="menu">
-			
-          <h2><!-- Title for menuset 1 -->Scenery List </h2>
-          <hr>
           <ul>
             <!-- List of links under menuset 1 -->
-            <li><a href="Qinghai.html" title="Link">Qinghai-Tibet Plateau</a></li>
-            <li><a href="Mongolia.html" title="Link">Inner Mongolia Plateau</a></li>
-            <li><a href="Loess.html" title="Link">Loess Plateau</a></li>
-            <li><a href="Yungui.html" title="Link">Yunnan-Guizhou Plateau</a></li>
+            <li><a href="Qinghai.html" title="Go" style = "font-size: 16px;">Qinghai-Tibet Plateau</a></li><br>
+            <li><a href="Mongolia.html" title="Go" style = "font-size: 16px;">Inner Mongolia Plateau</a></li><br>
+            <li><a href="Loess.html" title="Go" style = "font-size: 16px;">Loess Plateau</a></li><br>
+            <li><a href="Yungui.html" title="Go" style = "font-size: 16px;">Yunnan-Guizhou Plateau</a></li><br>
+            <li><a href="Junggar.html" title="Go" style = "font-size: 16px;">Junggar Basin</a></li><br>
+            <li><a href="Tarim.html" title="Go" style = "font-size: 16px;">Tarim Basin</a></li><br>
+            <li><a href="Qaidam.html" title="Go" style = "font-size: 16px;">Qaidam Basin</a></li><br>
+            <li><a href="Sichuan.html" title="Go" style = "font-size: 16px;">Sichuan Basin</a></li><br>
+            <li><a href="Northeast.html" title="Go" style = "font-size: 16px;">Northeast Plain</a></li><br>
+            <li><a href="North.html" title="Go" style = "font-size: 16px;">North China Plain</a></li><br>
+            <li><a href="Yangtze.html" title="Go" style = "font-size: 16px;">Yangtze Plain</a></li><br>
+            <li><a href="Liaodong.html" title="Go" style = "font-size: 16px;">Liaodong Hill</a></li><br>
+            <li><a href="Shandong.html" title="Go" style = "font-size: 16px;">Shandong Hill</a></li><br>
+            <li><a href="Southeast.html" title="Go" style = "font-size: 16px;">Southeast Hill</a></li><br>
           </ul>
+
         </nav>
 </div>
     </section>
     <section class="mainContent">
-      <div align = "center"><h3>Qinghai-Tibet Plateau</h3></div>
-      <div align = "center"><img src="images/Qinghai.png" width="600" height="400" alt=""/></div>
-      <p>Tibetan Plateau, or Qinghai-Tibet Plateau as it called in China, is the highest plateau in the world with an average altitude of 4,500m, and was reputed as “the roof of the world” and “the world’s third pole”. 
+      <div align = "center"><h1>Qinghai-Tibet Plateau</h1></div><br><br>
+      <div align = "center"><img src="images/Qinghai.png" alt="" width="600px" height="450px"/></div><br><br>
+      <p style="font-size: large">Tibetan Plateau, or Qinghai-Tibet Plateau as it called in China, is the highest plateau in the world with an average altitude of 4,500m, and was reputed as “the roof of the world” and “the world’s third pole”. 
       Located in Central Asia, it covers an area of 2,500,000,000 square kilometers, which is also the largest plateau in China. 
       The Qinghai-Tibet Plateau covers Tibet, Qinghai, south Xinjiang Uygur Autonomous Region, southwest Gansu, west part of Sihuan and Yunnan Provinces in China. Bhutan, Nepal and Ladakh in Indian are also on the plateau.
-       </p>
-      <p>Qinghai-Tibet Plateau is the youngest plateau in the world. 240 million years ago, Indian Plate began to squeeze the Asia Plate, which caused the uplift of Kunlun Mountain Range and Hoh Xil Area. 
+       </p><br>
+      <p style="font-size: large">Qinghai-Tibet Plateau is the youngest plateau in the world. 240 million years ago, Indian Plate began to squeeze the Asia Plate, which caused the uplift of Kunlun Mountain Range and Hoh Xil Area. 
       With the northwards movement of India Plate, it subducted to the Asia Plate, and Qinghai-Tibet Plateau gradually formed in the process of uplift. The formation of Tibetan Plateau was not just in one movement. The uplift of the plate may totally stop in a long time. 
-      About 10,000 years ago, the speed of uplift of the plateau even reached 7 mm a year.</p>
+      About 10,000 years ago, the speed of uplift of the plateau even reached 7 mm a year.</p><br>
+      <p style="font-size: large">Mount Everest is located at the Mahalangur section of the Himalayas Mountain rand which is on the southwest rang of the Tibetan Plateau. It is 8,840 meters high above sea level, and is the highest mountain in the world. It is also a sacred mountain.
+        Its snow peak sends out silver radiance year after year. Its waist is hidden in the clouds. The optimum weather to visit Mt. Everest is from April to June, a golden period for mountaineers. </p>
+      
+      <div>&nbsp;</div>
+      <div class="coolbutton">
+      <a href="Mongolia.html">Next Page</a></div>
+    
     </section>
 </div>
-  <footer> 
-    <!-- This is the footer with default 3 divs -->
-    <div>
-      <p>If you want to know more about this course, follow our step and learn knowledge with us!</p>
-    </div>
-    <div>
-      <p>Contact Us: help@learnProbability.com</p>
-    </div>
-    <div class="footerlinks">
-      <p><a href="Community2.html" title="Link">community support</a></p>
-      <p><a href="HOME.html" title="Link">more info</a></p>
-    </div>
-  </footer>
+<footer>
+        <div class="clearfloat"></div>
+           <div class="row blockDisplay">     
+             <div class = "footer-wrapper">
+               <div class="footer-box">
+                 <h6 class="footer-title">About Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+               
+               <div class="footer-box">
+                 <h6 class="footer-title">Contect Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+     
+                 <div class="footer-link-wrapper">
+                   <h6 class="footer-title">More Information</h6>
+                   <ul>
+                     <li><a href="https://www.topchinatravel.com/china-guide/qinghai-tibet-plateau-the-highest-plateau-in-the-world.htm">Reference Page1</a></li>
+                     <li><a href="https://www.chinahighlights.com/tour/top-china-tours/">Reference Page2</a></li>
+                   </ul>
+                 </div>
+     
+             </div>
+     </div>
+     </footer>
 </div>
 </body>
 </html>

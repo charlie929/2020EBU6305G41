@@ -3,6 +3,11 @@
     text-align: center !important;
 }
 
+@font-face {
+    font-family: 'FuturaLT';
+    src:url('../font/FuturaLT-Book.otf');
+}
+
 .title-subhny {
     font-size: 1.25em;
     font-weight: 400;
@@ -11,7 +16,7 @@
     color: #789ada;
     display: block;
     font-family: 'Pacifico', cursive;
-    padding-bottom: 1.875em;
+    padding-bottom: 0em;
     padding-top: 1.875em;
 }
 
@@ -56,7 +61,7 @@
 .columns {
     width: 33.3%;
     float: left;
-    font-family: "Source Sans Pro";
+    font-family: 'FuturaLT';
     color: #000000;
     line-height: 1.5em;
     padding-top: 0.625em;
@@ -80,10 +85,28 @@
 	padding-left: 5%;
 	padding-right: 5%;
     background-size: 0.625em;
+    font-size: 1em;
+    font-weight: lighter;
 }
 
 .row .columns h4 {
+    padding-left: 10%;
+    padding-right: 10%;
 	text-align: center;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:850px){
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .columns {
+        width: 80%;
+        float: none;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 .coolbutton{
@@ -95,7 +118,6 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     letter-spacing: 1.5px;
-    
 }
 
 .coolbutton a {

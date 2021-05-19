@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7-Day Hunan Discovery Tour</title>
+<link href="css/tour.css" rel="stylesheet" type="text/css">
+<link href="css/tourImg4.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/headbottombar.css">
+<link href="css/button.css" rel="stylesheet" type="text/css">
+<style>
+    @font-face {
+        font-family: 'FuturaLT';
+        src:url('../font/FuturaLT-Book.otf');
+    }
+    @font-face {
+        font-family: 'Road_Rage';
+        src:url(font/Road_Rage.otf);
+    }
+    .ac-container{
+        width: 100%;
+        margin: 1em auto 3em auto;
+        text-align: left;
+    }
+    .ac-container label{
+        font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+        padding: 0.5em 1em;
+        position: relative;
+        z-index: 20;
+        display: block;
+        height: 1.8em;
+        cursor: pointer;
+        color: #777;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+        line-height: 2em;
+        font-size: 1.2em;
+        font-family: 'FuturaLT';
+        background: #ffffff;
+        background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+        background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+        box-shadow: 
+            0px 0px 0px 1px rgba(155,155,155,0.3), 
+            1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+            0px 2px 2px rgba(0,0,0,0.1);
+    }
+    .ac-container label:hover{
+        background: #fff;
+    }
+    .ac-container input:checked + label,
+    .ac-container input:checked + label:hover{
+        background: orange;
+        color: white;
+        font-family: 'FuturaLT';
+        text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+        box-shadow: 
+            0px 0px 0px 1px rgba(155,155,155,0.3), 
+            0px 2px 2px rgba(0,0,0,0.1);
+    }
+    .ac-container label:hover:after,
+    .ac-container input:checked + label:hover:after{
+        content: '';
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        right: 0.9em;
+        top: 0.5em;
+        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJDQjg3QjIzNUEwQTExRTFCMzhGODE4MEUyMzVCOUExIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJDQjg3QjI0NUEwQTExRTFCMzhGODE4MEUyMzVCOUExIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkNCODdCMjE1QTBBMTFFMUIzOEY4MTgwRTIzNUI5QTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkNCODdCMjI1QTBBMTFFMUIzOEY4MTgwRTIzNUI5QTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5cTChyAAAAsUlEQVR42mJcduA0AxBkAvEOIL7PgBuwAXE1EHcA8XcmIFEBxNOA+DAQq+DRtBqI64B4CxBzgjS6QiWlgfgAEKtj0bQOiP2gfF0gVgRp9AHifUia9yJpBmnaCMTeUP5rIHYG4msgjd+xaAbZbADV5IGkyQGIL4M4TFBBmObdUL4EEJ9H0vQCqukazP1MSH4BafZH0syApMkZWRO6RmTNO/BpwqYRpjkIiBegOw8ZAAQYAErPJ/hwLstPAAAAAElFTkSuQmCC) no-repeat center center;	
+    }
+    .ac-container input:checked + label:hover:after{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxMjY0NjgzNUEwQTExRTFBMkMwQUUyOEY2NjkzRDMyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxMjY0Njg0NUEwQTExRTFBMkMwQUUyOEY2NjkzRDMyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjEyNjQ2ODE1QTBBMTFFMUEyQzBBRTI4RjY2OTNEMzIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjEyNjQ2ODI1QTBBMTFFMUEyQzBBRTI4RjY2OTNEMzIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4kGTYVAAAAlklEQVR42mJcduA0AxbACcTTgLgDiG9iU8CEQ9M6IE4A4gNArEWMRpCmjUDsAeVLAPFebJqZsGhyRVODVTMTkqYtSJpeALEhEO9A0ozibCYkTU5QsadA7ADEF4DYH0mzKFSzLkwjuiZnpJD8hUUz2NkgjbtxaGJA07wVyr8GxPdZoHH1BWrqHQbsAKQ5CIiroeq/AwQYALFQJdCqpXTVAAAAAElFTkSuQmCC);
+    }
+    .ac-container input{
+        display: none;
+    }
+    .ac-container article{
+        background: rgba(255, 255, 255, 0.5);
+        margin-top: 0;
+        overflow: hidden;
+        height: 0px;
+        position: relative;
+        z-index: 10;
+        -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    }
+    .ac-container article p{
+        font-style: 'FuturaLT';
+        color: rgb(48, 48, 48);
+        line-height: 1.5em;
+        font-size: 1em;
+        padding: 1em;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    }
+    .ac-container input:checked ~ article{
+        -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+    }
+    .ac-container input:checked ~ article.ac-large{
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class = "primary-header" style="height: 10em;">
+            <h1 style="font-family: 'Road_Rage';font-size: 75px;position: absolute;left: 1.25em;color:#f58220">W</h1>
+            <h1 style="font-family: 'Road_Rage';font-size: 52px;position: absolute;left: 3em;top:0.7em; color:#f2f2f2">onders</h1>
+            <h1 class = "headbar-title" style="font-family: 'Road_Rage';font-size: 30px;position: absolute;left: 6.5em;top:3.5em;">of China</h1>
+              <nav class="nav right" >
+                <ul>
+                  <li class="current"><a href="#">Menu</a></li>
+                  <li><a href="home.html" class="active">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="scenery.html">Scenery</a></li>
+                  <li><a href="travelguide.html">Travel Guide</a></li>
+                  <li><a href="community.html">Community</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="clearfloat"></div>
+
+        <h3 class="tour-title">7-Day Hunan Discovery Tour</h3> 
+        <h5 class="destination">
+            <span>
+                <img class="locate-image" src="images/locate.png">
+            </span>
+            Destination: Changsha, Zhangjiajie, Fenghuang
+        </h5>
+        
+        <div class="row">
+            <div class="right-image">
+                <div class="slide" style="margin-bottom: 30px">
+
+                    <input type="radio" name="sildeInput" value="0" id="sildeInput1" checked hidden />
+                    <label for="sildeInput1">1</label>
+                  
+                    <input type="radio" name="sildeInput" value="1" id="sildeInput2" hidden />
+                    <label for="sildeInput2">2</label>
+                  
+                    <input type="radio" name="sildeInput" value="1" id="sildeInput3" hidden />
+                    <label for="sildeInput3">3</label>
+                  
+                    <ul>
+                      <li>&nbsp;</li>
+                      <li>&nbsp;</li>
+                      <li>&nbsp;</li>
+                    </ul>
+                  </div>
+            </div>
+
+            <div class= left-article>
+                <h3>
+                    Hunan Discovery Tour
+                </h3>
+                <p>
+                    <strong>7 Days Changsha, Zhangjiajie, Fenghuang Ancient Town Private Tour</strong>
+                    <br><br>Hunan — the birthplace of Chairman Mao — may be little known by many people outside of China but it is <strong>waiting to be explored and appreciated</strong>. This tour includes the highlights of Changsha, amazing Zhangjiajie, and the beautiful Fenghuang Ancient Town.
+                    <br><br>With direct flights operating between LA and Changsha, it is easier to explore this mysterious and attractive land.
+                </p>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <div class='row'>
+
+            <h4>
+                <span>
+                    <img class="highlight-icon" src="images/highlight.png">
+                </span>
+                Tour Highlights
+            </h4>
+            
+            <li class="tour-list">Step into the birthplace and the former residence of Mao Zedong and discover how he became the greatest man in modern China.</li>
+            <li class="tour-list">Explore the highlights of the 'City of Snacks' — Changsha — and taste every snack yourself.</li>
+            <li class="tour-list">Challenge yourself on the glass walkway that is situated 1,430 meters above the ground in Zhangjiajie.</li>
+            <li class="tour-list">Experience the minority culture and taste the Tujia dishes in Fenghuang Ancient Town.</li>
+            <p>&nbsp;</p>
+            <h4>
+                <span>
+                    <img class="highlight-icon" src="images/itinerary.png">
+                </span>
+                Tour Itinerary
+            </h4>
+            <section class="ac-container">
+				<div>
+					<input id="ac-1" name="accordion-1" type="checkbox" checked />
+					<label for="ac-1">Day 1  Changsha Arrival</label>
+					<article class="ac-large">
+						<p>
+                            After a flight to Changsha, you will meet your guide and private driver at the airport, and then be transferred directly to your hotel.
+                            <br><br><strong>Discover Changsha snacks in the evening</strong>:
+                            <br>Changsha is one of the "Top Snacks Cities" in China, so when you are in Changsha make sure you never waste your free time! Local snacks are available everywhere, and you can also go to the Fire Palace to fulfill your appetite. Stinky bean curd, Maren crispy duck, and Deyuan steamed buns are highly recommended!
+						</p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-2" name="accordion-1" type="checkbox" />
+					<label for="ac-2">Day 2  Changsha City Highlights</label>
+					<article class="ac-large">
+						<p>
+                            <strong>Mawangdui</strong> contains three ancient tombs belonging to the family of Marquis Dai from the early Western Han Dynasty. The three tombs were all in excellent condition when they were unearthed between 1972 and 1974. The tombs contain more than 3,000 pieces of cultural relics, including silk books, silk paintings, other articles made from silk, bamboo slips used for writing before paper was invented, lacquerware, and more.
+                            <br><br><strong>Yuelu Academy</strong> was one of the four ancient Chinese academies in the Song Dynasty, established in the Northern Song Dynasty (in 976 AD), and has a reputation for being a millennium academy that has witnessed 1,000 years of reform of the education system. It represents part of the history of Chinese education.
+                            <br><br><strong>The Loving Youth Pavilion</strong> was built in 1792 during the Qing Dynasty. The beauty of this spot, with its blossoming peach trees, graceful willows, and flowing streams, has attracted many poets and artists.
+                        </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-3" name="accordion-1" type="checkbox" />
+					<label for="ac-3">Day 3  High Speed Train to Zhangjiajie, Yellow Dragon Cave</label>
+					<article class="ac-large">
+						<p>
+                            High speed train between Zhangjiajie and Changsha is on operation after Dec. 25th 2019. It takes about 3 hours. When arrive in Zhangjiajie West Station, your guide and driver will meet you and transfer to the Yellow Dragon Cavern first.
+                            <br><br>The <strong>Yellow Dragon Cave</strong> stretches a total length of 7.5 kilometers with four layers. It's home to an impressive collections of stalactites and stalagmites, illuminated in a variety of colored lights.
+                            <br><br><strong>Prepare for early starts and time-saving adjustments:</strong>
+                            <br>To avoid waiting in long queues, your tour guide will suggest the best time to start the day, and might suggest you get up early or alter your attraction schedule. Please kindly understand and cooperate. You may want to take an early night's rest.
+                        </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-4" name="accordion-1" type="checkbox" />
+					<label for="ac-4">Day 4  Zhangjiajie National Forest Park: Yuanjiajie and Tianzi Mountain</label>
+					<article class="ac-large">
+						<p>
+                            <strong>Breakfast</strong> in Zhangjiajie's hotels is very basic, so your guide will prepare bread, coffee, and fruit for you.
+                            <br><br><strong>Zhangjiajie National Forest Park</strong> is located in Wulingyuan Scenic Area, about 40 minutes' drive from the city. Tianzi Mountain and Yuanjiajie are the most classic and popular sites in Zhangjiajie.
+                            <br><br>To save your time and energy, we will arrange the cable car (or elevator) trips to take you up and down the mountain. Take the cable car up <strong>Tianzi Mountain</strong>, and look through the glass walkway to see large areas of spiky sandstone peaks below that are thrusting up from the ground.
+                            <br><br>Have a simple lunch on the mountain. If you prefer, we can arrange for you to have lunch at a McDonald's on the mountain, and have a break in the air-conditioned building.
+                            <br><br>The namesake and inspiration for the <strong>Hallelujah Mountain</strong> in Avatar is located in Yuanjiajie Scenic Area, which you will visit in the afternoon after taking a shuttle bus from Tianzi Mountain.
+                            <br><br>Evening free time recommendation:
+                            <br><strong>The Xibu Ancient Streets</strong> are a Tujia minority culture and tourist area about 2 kilometers from the hotels. They contain a local snack street, a folk culture souvenir street, and a bar street. Street barbecues are very popular in Zhangjiajie, so you could try sitting down and enjoying a barbecue and some local beer like a local!
+                        </p>
+					</article>
+				</div>
+                <div>
+					<input id="ac-5" name="accordion-1" type="checkbox" />
+					<label for="ac-5">Day 5  Zhangjiajie: Baofeng Lake and Tianmen Mountain</label>
+					<article class="ac-large">
+						<p>
+                            <strong>Baofeng Lake</strong> is in a basin created by the terrain in the middle of this mountainous area. A walk of about 20 minutes is needed before you reach the lake and take a wooden boat for a 30-minute boat ride. It is a leisurely experience as you float across the clear water, see the hills of various shapes, and enjoy entertainment by the local minority people as they sing their traditional songs.
+                            <br><br><strong>Tianmen Mountain</strong> is regarded as the 'soul' of Zhangjiajie, being its highest mountain. The views include graceful ancient trees, karst hillocks, and long roads that are carved from the sides of the cliff. The cable car takes 30 minutes to get from the city center to the mountain top and is the longest cable car in the world.
+                            <br><br>Your heart will beat quickly at Tianmen Mountain on the world's longest cable car, the suspended glass walkway that is almost a mile (1,430 meters) above the ground, and the '99 Bends' mountain road.
+                            <br><br><strong>Tianmen Cave</strong> (literally meaning 'Heaven's Gate Hole') is a 30-meter-high hole formed naturally in the mountain like a doorway. It is well-known for being glided through by a world-class stuntman in a wing suit. To reach the hole, you can climb for about half an hour up the 'Stairway to Heaven'.
+                            <br><br><strong>Zhangjiajie is an amazing place for photography!</strong>
+                            <br>Using the photographic advice given by your professional tour guide, no matter who you are or what equipment you use, you can create a masterpiece.
+                        </p>
+					</article>
+				</div>
+                <div>
+					<input id="ac-6" name="accordion-1" type="checkbox" />
+					<label for="ac-6">Day 6  Zhangjiajie to Fenghuang: The Red Stone Forest National Geopark and Fenghuang Ancient Town</label>
+					<article class="ac-large">
+						<p>
+                            It takes about 5 hours to drive from Zhangjiajie to Fenghuang, so it is better to start the day early. Although it's a long journey, you won't be bored on the way!
+                            <br><br>On the way to the Fenghuang Ancient Town, you will visit the <strong>Red Stone Forest National Geopark</strong>. It is an area comprised of the Red Stone Forest
+                            <br><br>Karst Landform Scenic Area, Gorge Scenic Area, underground rivers, lakes, waterfalls, and cave scenic spot.
+                            <br><br>In the Red Stone Forest National Geopark, you will see many <strong>strangely-shaped rocks</strong> everywhere. They are in different poses and totally natural. In the past, these rocks were called cornerstones, also known as "pagoda stones" or "the Chinese cornerstones".
+                            <br><br>Different from other ancient towns in China, <strong>Fenghuang Ancient Town</strong> is a secluded and tranquil town located on the bank of the river and surrounded by mountains. It is a good idea to stroll in this ancient town and visit some interesting shops and homes, and discover some interesting nooks. The ethnic handicrafts are really delicate and special in this region. At night, the town becomes more quiet and peaceful. Sitting in a bar and appreciating the sunset is wonderful.
+                            <br><br><strong>Evening recommendation</strong>:
+                            <br>The night view of Fenghuang Ancient Town is beautiful and attracts many photographers. In your free time, it is recommended that you find a café beside the Tuo River, sit down, and enjoy the nighttime scenery!
+                        </p>
+					</article>
+				</div>
+                <div>
+					<input id="ac-7" name="accordion-1" type="checkbox" />
+					<label for="ac-7">Day 7  Transfer to Zhangjiajie and Departure</label>
+					<article class="ac-large">
+						<p>
+                            Your tour guide will pick you up from your hotel, transfer you to Zhangjiajie Hehua Airport, and wave goodbye.
+                            <br><br><strong>Onward Domestic Flights</strong>:
+                            <br>Zhangjiajie has direct flights to China's major cities, such as Changsha, Beijing, Shanghai, Xi'an, and Guangzhou. We have good relationships with the air companies, and can get competitive flight prices, so feel free to let us know your next destination for a quote!
+                        </p>
+					</article>
+				</div>
+			</section>
+        </div>
+        
+    <div>&nbsp;</div>
+    <div class="coolbutton">
+        <a href="tour3.html">Last Page</a></div>
+    <div>&nbsp;</div>  
+    <div class="coolbutton">
+    <a href="tour5.html">Next Page</a></div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    </div>
+
+
+    <footer>
+        <div class="clearfloat"></div>
+           <div class="row blockDisplay">     
+             <div class = "footer-wrapper">
+               <div class="footer-box">
+                 <h6 class="footer-title">About Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+               
+               <div class="footer-box">
+                 <h6 class="footer-title">Contect Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+     
+                 <div class="footer-link-wrapper">
+                   <h6 class="footer-title">More Information</h6>
+                   <ul>
+                     <li><a href="https://www.topchinatravel.com/china-guide/qinghai-tibet-plateau-the-highest-plateau-in-the-world.htm">Reference Page1</a></li>
+                     <li><a href="https://www.chinahighlights.com/tour/top-china-tours/">Reference Page2</a></li>
+                   </ul>
+                 </div>
+     
+             </div>
+     </div>
+     </footer>
+
+</body>

@@ -17,7 +17,6 @@
     font-family: 'Georgia' ;
     font-weight: bold;
     font-size: 1.875em;
-    font-weight: 400;
     letter-spacing: 1px;
     color: #789ada;
     padding-top: 1.875em;
@@ -45,6 +44,7 @@
 }
 
 .right-image {
+    padding-top: 1em;
     background-color: #FFFFFF;
 /*  width: 55%; */
     float: right;
@@ -88,4 +88,19 @@
     font-family: 'FuturaLT';
     line-height: 1.875em;
     background-size: 0.625em;
+}
+
+@media only screen and (max-width:1100px){
+    .right-image{
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+    }
+    .left-article{
+        width: 90%;
+    }
+}
+
+/*@media only screen and (max-width:570px){
+
 }

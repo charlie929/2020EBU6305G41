@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4-Day Emperor's Tour of Beijing Tour</title>
+<link href="css/tour.css" rel="stylesheet" type="text/css">
+<link href="css/tourImg1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/headbottombar.css">
+<style>
+    @font-face {
+        font-family: 'FuturaLT';
+        src:url('../font/FuturaLT-Book.otf');
+    }
+    @font-face {
+        font-family: 'Road_Rage';
+        src:url(font/Road_Rage.otf);
+    }
+    .ac-container{
+        width: 100%;
+        margin: 1em auto 3em auto;
+        text-align: left;
+    }
+    .ac-container label{
+        font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+        padding: 0.5em 1em;
+        position: relative;
+        z-index: 20;
+        display: block;
+        height: 1.8em;
+        cursor: pointer;
+        color: #777;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+        line-height: 2em;
+        font-size: 1.2em;
+        font-family: 'FuturaLT';
+        background: #ffffff;
+        background: -moz-linear-gradient(top, #ffffff 1%, #eaeaea 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#eaeaea));
+        background: -webkit-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: -o-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: -ms-linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 );
+        box-shadow: 
+            0px 0px 0px 1px rgba(155,155,155,0.3), 
+            1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+            0px 2px 2px rgba(0,0,0,0.1);
+    }
+    .ac-container label:hover{
+        background: #fff;
+    }
+    .ac-container input:checked + label,
+    .ac-container input:checked + label:hover{
+        background: orange;
+        color: white;
+        font-family: 'FuturaLT';
+        text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+        box-shadow: 
+            0px 0px 0px 1px rgba(155,155,155,0.3), 
+            0px 2px 2px rgba(0,0,0,0.1);
+    }
+    .ac-container label:hover:after,
+    .ac-container input:checked + label:hover:after{
+        content: '';
+        position: absolute;
+        width: 1.5em;
+        height: 1.5em;
+        right: 0.9em;
+        top: 0.5em;
+        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjJDQjg3QjIzNUEwQTExRTFCMzhGODE4MEUyMzVCOUExIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjJDQjg3QjI0NUEwQTExRTFCMzhGODE4MEUyMzVCOUExIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MkNCODdCMjE1QTBBMTFFMUIzOEY4MTgwRTIzNUI5QTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MkNCODdCMjI1QTBBMTFFMUIzOEY4MTgwRTIzNUI5QTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5cTChyAAAAsUlEQVR42mJcduA0AxBkAvEOIL7PgBuwAXE1EHcA8XcmIFEBxNOA+DAQq+DRtBqI64B4CxBzgjS6QiWlgfgAEKtj0bQOiP2gfF0gVgRp9AHifUia9yJpBmnaCMTeUP5rIHYG4msgjd+xaAbZbADV5IGkyQGIL4M4TFBBmObdUL4EEJ9H0vQCqukazP1MSH4BafZH0syApMkZWRO6RmTNO/BpwqYRpjkIiBegOw8ZAAQYAErPJ/hwLstPAAAAAElFTkSuQmCC) no-repeat center center;	
+    }
+    .ac-container input:checked + label:hover:after{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAYAAAACTR1pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIxMjY0NjgzNUEwQTExRTFBMkMwQUUyOEY2NjkzRDMyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIxMjY0Njg0NUEwQTExRTFBMkMwQUUyOEY2NjkzRDMyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjEyNjQ2ODE1QTBBMTFFMUEyQzBBRTI4RjY2OTNEMzIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjEyNjQ2ODI1QTBBMTFFMUEyQzBBRTI4RjY2OTNEMzIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4kGTYVAAAAlklEQVR42mJcduA0AxbACcTTgLgDiG9iU8CEQ9M6IE4A4gNArEWMRpCmjUDsAeVLAPFebJqZsGhyRVODVTMTkqYtSJpeALEhEO9A0ozibCYkTU5QsadA7ADEF4DYH0mzKFSzLkwjuiZnpJD8hUUz2NkgjbtxaGJA07wVyr8GxPdZoHH1BWrqHQbsAKQ5CIiroeq/AwQYALFQJdCqpXTVAAAAAElFTkSuQmCC);
+    }
+    .ac-container input{
+        display: none;
+    }
+    .ac-container article{
+        background: rgba(255, 255, 255, 0.5);
+        margin-top: 0;
+        overflow: hidden;
+        height: 0px;
+        position: relative;
+        z-index: 10;
+        -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+        transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    }
+    .ac-container article p{
+        font-style: 'FuturaLT';
+        color: rgb(48, 48, 48);
+        line-height: 1.5em;
+        font-size: 1em;
+        padding: 1em;
+        text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    }
+    .ac-container input:checked ~ article{
+        -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+        box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+    }
+    .ac-container input:checked ~ article.ac-large{
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class = "primary-header" style="height: 10em;">
+            <h1 style="font-family: 'Road_Rage';font-size: 75px;position: absolute;left: 1.25em;color:#f58220">W</h1>
+            <h1 style="font-family: 'Road_Rage';font-size: 52px;position: absolute;left: 3em;top:0.7em; color:#f2f2f2">onders</h1>
+            <h1 class = "headbar-title" style="font-family: 'Road_Rage';font-size: 30px;position: absolute;left: 6.5em;top:3.5em;">of China</h1>
+              <nav class="nav right" >
+                <ul>
+                  <li class="current"><a href="#">Menu</a></li>
+                  <li><a href="home.html" class="active">Home</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="scenery.html">Scenery</a></li>
+                  <li><a href="travelguide.html">Travel Guide</a></li>
+                  <li><a href="community.html">Community</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="clearfloat"></div>
+
+        <h3 class="tour-title">4-Day Emperor's Tour of Beijing Tour</h3> 
+        <h5 class="destination">
+            <span>
+                <img class="locate-image" src="images/locate.png">
+            </span>
+            Destination: Beijing
+        </h5>
+        
+        <div class="row">
+            <div class="right-image">
+                <div class="slide" style="margin-bottom: 30px">
+
+                    <input type="radio" name="sildeInput" value="0" id="sildeInput1" checked hidden />
+                    <label for="sildeInput1">1</label>
+                  
+                    <input type="radio" name="sildeInput" value="1" id="sildeInput2" hidden />
+                    <label for="sildeInput2">2</label>
+                  
+                    <input type="radio" name="sildeInput" value="1" id="sildeInput3" hidden />
+                    <label for="sildeInput3">3</label>
+                  
+                    <ul>
+                      <li>&nbsp;</li>
+                      <li>&nbsp;</li>
+                      <li>&nbsp;</li>
+                    </ul>
+                  </div>
+            </div>
+
+            <div class= left-article>
+                <h3>
+                    Explore Beijing with Our Emperor's Tour
+                </h3>
+                <p>
+                    <strong>4 Days Emperor's Tour of Beijing</strong>
+                    <br><br>This is the perfect trip for first-time-to-Beijing visitors who want a cultural insight into the city’s history and traditions.
+                    <br><br>This 4-day private Beijing tour covers all the highlights of Beijing. Our private tours let you travel at your own flexible pace with no rush. With no strangers to consider, we can concentrate on fulfilling your wishes. Enjoy your time to the utmost
+                </p>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <div class='row'>
+
+            <h4>
+                <span>
+                    <img class="highlight-icon" src="images/highlight.png">
+                </span>
+                Tour Highlights
+            </h4>
+            
+            <li class="tour-list">Listen to the interesting stories of eight famous figures in the Forbidden City.</li>
+            <li class="tour-list">Enjoy a Chinese cultural experience in a traditional hutong courtyard house.</li>
+            <li class="tour-list">Explore the most beautiful section of the Great Wall, where there are fewer tourists.</li>
+            <li class="tour-list">Enjoy an authentic Beijing roast duck dinner in a time-honored brand restaurant.</li>
+            <p>&nbsp;</p>
+            <h4>
+                <span>
+                    <img class="highlight-icon" src="images/itinerary.png">
+                </span>
+                Tour Itinerary
+            </h4>
+            <section class="ac-container">
+				<div>
+					<input id="ac-1" name="accordion-1" type="checkbox" checked />
+					<label for="ac-1">Day 1  Arrival in Beijing</label>
+					<article class="ac-large">
+						<p>
+							Your private guide will meet and greet you at the arrival hall of the airport or at the train station's exit. A comfortable private car (non-smoking) with an experienced driver will transfer you directly to your hotel, where your guide will help you to check-in.
+                            <br><strong>Free time suggestion:</strong>
+							<br><br>The <strong>Legend of Kung Fu show</strong> is a mix of traditional martial arts and modern theater. Presenting stunning kung fu skills with exquisite ballet and music, this beautiful story has no doubt become the most enjoyed kung fu show in China.
+							<br><br>The <strong>Red Theater</strong> is the place to see the performance. Just ask your guide and he/she will help you obtain tickets.
+							<br><br><strong>Hotel options:</strong>
+							<br><br>Novotel Peace Beijing (4-star)
+							<br>Crowne Plaza Hotel Beijing Chaoyang U-Town (5-star)
+						</p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-2" name="accordion-1" type="checkbox" />
+					<label for="ac-2">Day 2  The Forbidden City, Hutongs Tour, and Beijing Roast Duck</label>
+					<article class="ac-large">
+						<p>
+                            Meet your guide in the hotel lobby and drive to the historic <strong>Tian'anmen Square</strong>. Your guide will provide you with a commentary about the history and architecture as well as anecdotes about the square. Enjoy some time there to take photos.
+                            <br><br>After going through the middle gate of the Tian'anmen Rostrum, start to enjoy the highlight of the day, the Forbidden City, which was home to 24 emperors in the Ming and Qing dynasties from 1420 to 1912.
+                            <br><br>Your tour guide will help you explore 12 carefully-selected places in the Forbidden City, recommended by our local experts, while other group tours only visit six spots briefly.
+                            <br><br>Besides admiring the splendid palaces on the central axis, your guide will <strong>take you off the touristy route</strong> to explore some spots that are related to some famous figures from the two dynasties, and he/she will help you to trace elements of their lives there.
+                            <br><br>The stories about them will make the Forbidden City come alive for you.
+                            <br><br>Have a rest and enjoy some delicious local food for <strong>lunch </strong>at a restaurant loved by the locals.
+                            <br><br>After lunch, go to the old hutong area with your guide and <strong>take a rickshaw ride through the 300-year-old hutongs</strong>.
+                            <br><br><strong>A visit to a local family</strong>, whose ancestors have lived in the hutongs for generations, offers a local perspective on the area's history and is a highlight for most visitors.
+                            <br><br>Enjoy an authentic <strong>Beijing roast duck dinner</strong> in a time-honored brand restaurant — Quanjude.
+                            <br><br><strong>Good to know:</strong>
+                            <br><br><strong>1. Skip the ticket line at the Forbidden City:</strong> In order to save your time, your tour guide will buy the tickets online in advance so that you don't need to stand in a long queue.
+                            <br><br><strong>2. A traditional Chinese cultural experience:</strong> We are happy to offer you a "one out of three" free experience in the hutongs (lasting for about 40 minutes) if you are interested in this: learn to apply facial makeup for the Peking opera, learn Chinese calligraphy, or learn how to do Chinese paper cutting.
+                            <br><br>Please tell your tour guide which one you prefer a day in advance so that he/she can make a reservation for you.
+                        </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-3" name="accordion-1" type="checkbox" />
+					<label for="ac-3">Day 3  The Great Wall at Mutianyu and Temple of Heaven Tour</label>
+					<article class="ac-large">
+						<p>
+                            Visit the <strong>Temple of Heaven</strong> in the morning. The Circular Mound Altar, Echo Wall, and the spectacular Imperial Vault of Heaven are the highlights.
+                            <br><br>Additionally, your private guide will show you an area in the park where the local people do their morning exercises, such as tai chi or dancing.
+                            <br><br><strong>Enjoy lunch</strong> with your guide in a local restaurant.
+                            <br><br>In the afternoon, you'll hike <strong>the Great Wall at Mutianyu</strong>. This section is ranked top among all parts of the Great Wall on TripAdvisor due to its picturesque scenery and beautifully restored architecture.
+                            <br><br>In order to save your time, we will <strong>arrange round-trip cable car rides</strong> (you can also choose to walk down) to ascend and descend the Great Wall, instead of spending about 40 minutes climbing the steps.
+                            <br><br>On the wall, your guide will be with you to hike “the most beautiful and interesting part of the Great Wall”, which is <strong>between the 14th and 23rd watchtowers</strong>.
+                            <br><br>You will have some free time to enjoy yourself after hearing some information from your guide.
+                            <br><br>It normally takes <strong>about 2 hours</strong> to complete the route. Then descend and get back to your vehicle.
+                            <br><br><strong>Good to know:</strong>
+                            <br><br>If your group has no more than four people, we will <strong>drive you to the foot of the Great Wall</strong> instead of arranging a shuttle bus in order to save your time.
+                        </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-4" name="accordion-1" type="checkbox" />
+					<label for="ac-4">Day 4  The Summer Palace and Departure from Beijing</label>
+					<article class="ac-large">
+						<p>
+                            Drive to the famous imperial garden in China, <strong>the Summer Palace</strong>. It is where the emperors used to retreat when fleeing the summer heat.
+                            <br><br>The best way to enjoy sightseeing at the Summer Palace is to take a dragon boat on the lake (the boat trip is not available in winter as the lake will be frozen).                           
+                            <br><br>You will have a chance to view all of the beautiful palaces at the lakeside during the trip.
+                            <br><br><strong>Enjoy lunch</strong> at an attractive traditional restaurant.                            
+                            <br><br>Your guide will handle your luggage and transfer and will accompany you to the train/bus station or the correct check-in desk at the airport for your departure.
+                        </p>
+					</article>
+				</div>
+			</section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="clearfloat"></div>
+           <div class="row blockDisplay">     
+             <div class = "footer-wrapper">
+               <div class="footer-box">
+                 <h6 class="footer-title">About Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+               
+               <div class="footer-box">
+                 <h6 class="footer-title">Contect Us</h6>
+                 <p style="color: aliceblue;">Group 41, from Beijing University of Telecommunication and Post AND joint program with Queen Marry University.</p>
+               </div>
+     
+                 <div class="footer-link-wrapper">
+                   <h6 class="footer-title">More Information</h6>
+                   <ul>
+                     <li><a href="https://www.topchinatravel.com/china-guide/qinghai-tibet-plateau-the-highest-plateau-in-the-world.htm">Reference Page1</a></li>
+                     <li><a href="https://www.chinahighlights.com/tour/top-china-tours/">Reference Page2</a></li>
+                   </ul>
+                 </div>
+     
+             </div>
+     </div>
+     </footer>
+
+</body>

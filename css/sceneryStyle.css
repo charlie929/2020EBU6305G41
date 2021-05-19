@@ -1,13 +1,14 @@
 @charset "utf-8";
 /* Global Styles */
-a:hover {
+/*a:hover {
 	color: rgba(89,92,100,1.00);
-}
+}*/
 img{
 	border-radius: 15px;
 	max-width: 100%;
 	max-height: 100%;
 }
+
 /*img{
 	border-radius: 15px;
 	width: 200px;
@@ -292,5 +293,7 @@ header #headerLinks a {
 	width: 100%;
 	padding-left: 0px;
 }
+
+
 }
 }
